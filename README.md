@@ -1,2 +1,2 @@
 # HackerRank
-This repository contains HackerRAnk solutions for python exercises.
+This repository contains HackerRank solutions for python exercises.
