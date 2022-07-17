@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    for x,y in student_marks.items():
+        if query_name == x:
+            s=0.00 
+            for i in y:
+                s = s+i
+            div = s/3
+            print(f"{div:.2f}")
