@@ -1,0 +1,28 @@
+"""
+Input Format
+One line of input: an integer N .
+Output Format
+A list on a single line containing the cubes of the first N fibonacci numbers.
+
+"""
+
+cube = lambda x: x**3    #function to find the cube
+
+def fibonacci(n):
+    # return a list of fibonacci number 
+    a ,total = 0,0 #initilization
+    b = 1
+    fib_list = [] #empty list
+    for i in range(n): #loop 
+        total +=a                 #increment by a
+        fib_list.append(total)  #adds the value to the list
+        a = b
+        b = total
+    return fib_list 
+if __name__ == '__main__':
+    n = int(input())
+    print(list(map(cube, fibonacci(n))))
+
+
+
+
